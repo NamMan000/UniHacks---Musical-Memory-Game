@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Musical Memory Game</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
+
+</head>
+
+  <body>
+  <h1>Musical Memory Game</h1>
+ <p1 id = "Instructions"> Match the cards with the same note! </p1> 
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music Memory</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  
+  <label id = "AnswerLabel" for="AnswerBox"> Submit the name of the song:</label>
+  <input id = "AnswerInput"type="text" name="AnswerBox">
+  <button type = "submit" id = "AnswerButton" onclick = "submit()"> Submit </button>
+  <section id = "memory_cards" class="music_mem">
+    <div id = "a" class="card" data-name="note_A">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=A.png alt="note_A" >
+    </div>
+
+     <div id = "c2" class="card" data-name="note_C">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=C.png alt="note_C" >
+    </div>
+
+    <div id = "b" class="card" data-name="note_B">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=B.png alt="note_B" >
+    </div>
+    
+    <div id = "a2" class="card" data-name="note_A">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=A.png alt="note_A" >
+    </div>
+   
+    <div id = "c" class="card" data-name="note_C">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=C.png alt="note_C">
+    </div>
+    
+    <div id = "e" class="card" data-name="note_E">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=E.png alt="note_E" >
+    </div>
+
+    <div id = "d" class="card" data-name="note_D">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=D.png alt="note_D" >
+    </div>
+
+    <div id = "d2" class="card" data-name="note_D">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=D.png alt="note_D" >
+    </div>
+
+    <div id = "f" class="card" data-name="note_F">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=F.png alt="note_F" >
+    </div>
+
+    <div id = "e2" class="card" data-name="note_E">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=E.png alt="note_E" >
+    </div>
+
+     <div id = "b2" class="card" data-name="note_B">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=B.png alt="note_B" >
+    </div>
+
+    <div id = "f2" class="card" data-name="note_F">
+      <img class="back" src=note.jpeg alt="notes_cover">
+      <img class="front" src=F.png alt="note_F" >
+    </div>
+
+
+  <audio id="a_aud">
+  <source src="piano-a_A_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio>    
+         <audio id="b_aud">
+  <source src="piano-b_B_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio>  
+         <audio id="c_aud">
+  <source src="piano-c_C_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio>  
+         <audio id="d_aud">
+  <source src="piano-d_D_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio>  
+         <audio id="e_aud">
+  <source src="piano-e_E_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio> 
+         <audio id="f_aud">
+  <source src="piano-f_F_major.wav" type="audio/wav">
+  Your browser does not support the audio element
+</audio>  
+
+<audio id="rainbow">
+  <source src="somewhere.mp3" type="audio/mp3">
+  Your browser does not support the audio element
+</audio> 
+
+<audio id="clair">
+  <source src="clair.wav#t=0,10" type="audio/wav">
+  Your browser does not support the audio element
+</audio> 
+<audio id="twinkle">
+  <source src="twinkle.wav#t=0,7" type="audio/wav">
+  Your browser does not support the audio element
+</audio> 
+    
+
+  <script src="script.jsx"></script>
+
+<!--   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>

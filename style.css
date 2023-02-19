@@ -1,0 +1,71 @@
+h1 {
+  color: white;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+p1 {
+ color: white;
+ font-family: 'Arima Madurai', cursive;
+ text-align: center ;
+  font-size: 23px;
+}
+
+body {
+  background-image: url(pic.png);
+  height: 100 vh;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+  font-size: 15px;
+  font-family: 'Arima Madurai', cursive;
+
+}
+img {
+  width: 100px;
+}
+
+.music_mem {
+  width: 640px;
+  height: 640px; 
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
+}
+
+.card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px white;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.card:active {
+  transform: scale(.90);
+  transition: transform .2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  border: 2px solid white;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
