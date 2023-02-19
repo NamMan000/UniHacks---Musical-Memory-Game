@@ -107,7 +107,7 @@ document.getElementById("AnswerButton").style.visibility = "visible";
 }
 
 function submit(){
-  if (document.getElementById("AnswerInput").value.includes(word4song)){
+  if (document.getElementById("AnswerInput").value.toLowerCase().includes(word4song)){
     alert("YOU REMEMBERED IT!!")
   }else{
     alert("That is Incorrect!")
